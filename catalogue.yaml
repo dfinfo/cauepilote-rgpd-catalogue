@@ -3,10 +3,17 @@
 # Lu directement par toutes les apps (cache d'une heure) : une modification poussée sur master est en ligne
 # partout, sans redéploiement. Un fichier invalide est ignoré par les apps, qui gardent le dernier valide.
 #
+# processor  : le sous-traitant (df-info), repris en en-tête du registre de chaque app.
 # recipients : destinataires génériques, cités par les traitements (treatment_recipients).
 # treatments : traitements génériques. Un traitement ne figure au registre d'une app que si une de ses
 #              données le cite (facette `treatments`, constante GenericTreatmentCode du rgpd-bundle).
 # Les clés ne changent jamais. Toutes les rubriques sont obligatoires.
+
+processor:
+    processor_label: df-info
+    processor_txt: |
+        df-info, éditeur et hébergeur de CAUE'PILOTE, sous-traitant au sens de l'article 28 du RGPD.
+        Denis Fohl, 214 impasse des Taillades, 24220 Coux et Bigaroque - Mouzens. Contact : contact@cauepilote.com.
 
 recipients:
     personnel_caue:
