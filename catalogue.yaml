@@ -65,4 +65,4 @@ treatments:
             Mesures de sécurité : une base de données propre à chaque CAUE ; accès à l'application par identifiant et mot de passe, droits attribués par rôle ; échanges chiffrés (HTTPS) ; accès aux serveurs par clé SSH seule, pare-feu, blocage des tentatives d'intrusion, mises à jour de sécurité automatiques ; deux sauvegardes quotidiennes chez deux hébergeurs distincts ; surveillance de la disponibilité toutes les 3 minutes ; accès aux données limité au personnel habilité de df-info, pour le support et la maintenance.
 
             Analyse d'impact (AIPD) : non requise. Le traitement ne relève d'aucun critère de la liste de la CNIL des traitements soumis à analyse d'impact (pas de données sensibles collectées à grande échelle, pas de profilage, pas de décision automatisée, pas de surveillance systématique).
-        treatment_recipients: [personnel_caue, dfinfo, hebergement, brevo, google_maps]
+        treatment_recipients: [personnel_caue, dfinfo, hebergement, brevo]
