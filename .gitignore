@@ -1,0 +1,4 @@
+# Seul le catalogue est suivi : il est lu en brut par les apps CAUE'PILOTE (raw.githubusercontent.com).
+*
+!.gitignore
+!catalogue.yaml

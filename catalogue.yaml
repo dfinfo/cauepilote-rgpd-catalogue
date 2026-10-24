@@ -1,0 +1,68 @@
+# Catalogue central des traitements génériques de CAUE'PILOTE.
+#
+# Lu directement par toutes les apps (cache d'une heure) : une modification poussée sur master est en ligne
+# partout, sans redéploiement. Un fichier invalide est ignoré par les apps, qui gardent le dernier valide.
+#
+# recipients : destinataires génériques, cités par les traitements (treatment_recipients).
+# treatments : traitements génériques. Un traitement ne figure au registre d'une app que si une de ses
+#              données le cite (facette `treatments`, constante GenericTreatmentCode du rgpd-bundle).
+# Les clés ne changent jamais. Toutes les rubriques sont obligatoires.
+
+recipients:
+    personnel_caue:
+        recipient_label: Personnel habilité du CAUE
+        recipient_txt: Salariés du CAUE dont les fonctions le justifient, selon les droits attribués dans l'application.
+        recipient_outside_eu: false
+
+    dfinfo:
+        recipient_label: df-info
+        recipient_txt: Éditeur de CAUE'PILOTE, sous-traitant du CAUE pour l'hébergement, le support et la maintenance de l'application. France.
+        recipient_outside_eu: false
+
+    hebergement:
+        recipient_label: Hébergeurs des serveurs
+        recipient_txt: Hébergeurs des serveurs de production et de sauvegarde (Ikoula, OVHcloud, Online / Scaleway), sous-traitants ultérieurs de df-info. France et Union européenne.
+        recipient_outside_eu: false
+
+    brevo:
+        recipient_label: Brevo
+        recipient_txt: Relais d'envoi des emails envoyés par l'application, sous-traitant ultérieur de df-info. Union européenne.
+        recipient_outside_eu: false
+
+    smsapi:
+        recipient_label: SMSAPI (LINK Mobility)
+        recipient_txt: Envoi des SMS envoyés par l'application, sous-traitant ultérieur de df-info. Union européenne.
+        recipient_outside_eu: false
+
+    google_maps:
+        recipient_label: Google Maps (Google Ireland Ltd)
+        recipient_txt: Cartographie et géolocalisation des adresses saisies, sous-traitant ultérieur de df-info. Union européenne et États-Unis, transfert encadré par le cadre de protection des données UE–États-Unis (décision d'adéquation du 10 juillet 2023) et les clauses contractuelles types de la Commission européenne.
+        recipient_outside_eu: true
+
+    google_calendar:
+        recipient_label: Google Calendar (Google Ireland Ltd)
+        recipient_txt: Synchronisation des agendas, sous-traitant ultérieur de df-info. Union européenne et États-Unis, transfert encadré par le cadre de protection des données UE–États-Unis (décision d'adéquation du 10 juillet 2023) et les clauses contractuelles types de la Commission européenne.
+        recipient_outside_eu: true
+
+treatments:
+    conseil_particuliers:
+        treatment_label: Conseil architectural aux particuliers
+        treatment_txt: |
+            Description : accueil des particuliers qui ont un projet de construction, de rénovation ou d'aménagement, prise de rendez-vous, conseil gratuit par un architecte conseiller, suivi du projet et des documents déposés.
+
+            Finalité : conseiller les particuliers sur la qualité architecturale, urbaine, paysagère et environnementale de leur projet :
+            - prise de rendez-vous et envoi des confirmations ;
+            - conduite du conseil et rédaction de la fiche de conseil ;
+            - envoi du compte rendu au demandeur et aux destinataires qu'il désigne ;
+            - statistiques et bilans d'activité, sur des données anonymisées ou agrégées.
+
+            Base légale : mission d'intérêt public (art. 6.1.e du RGPD), confiée aux CAUE par l'article 7 de la loi n° 77-2 du 3 janvier 1977 sur l'architecture : fournir aux personnes qui désirent construire les informations, les orientations et les conseils propres à assurer la qualité architecturale des constructions et leur bonne insertion dans le site.
+
+            Source des données : la personne elle-même.
+
+            Décision automatisée, profilage : non.
+
+            Mesures de sécurité : une base de données propre à chaque CAUE ; accès à l'application par identifiant et mot de passe, droits attribués par rôle ; échanges chiffrés (HTTPS) ; accès aux serveurs par clé SSH seule, pare-feu, blocage des tentatives d'intrusion, mises à jour de sécurité automatiques ; deux sauvegardes quotidiennes chez deux hébergeurs distincts ; surveillance de la disponibilité toutes les 3 minutes ; accès aux données limité au personnel habilité de df-info, pour le support et la maintenance.
+
+            Analyse d'impact (AIPD) : non requise. Le traitement ne relève d'aucun critère de la liste de la CNIL des traitements soumis à analyse d'impact (pas de données sensibles collectées à grande échelle, pas de profilage, pas de décision automatisée, pas de surveillance systématique).
+        treatment_recipients: [personnel_caue, dfinfo, hebergement, brevo, google_maps]
