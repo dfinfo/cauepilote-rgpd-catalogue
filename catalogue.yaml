@@ -73,3 +73,21 @@ treatments:
 
             Analyse d'impact (AIPD) : non requise. Le traitement ne relève d'aucun critère de la liste de la CNIL des traitements soumis à analyse d'impact (pas de données sensibles collectées à grande échelle, pas de profilage, pas de décision automatisée, pas de surveillance systématique).
         treatment_recipients: [personnel_caue, dfinfo, hebergement, brevo]
+
+    demandes_droits:
+        treatment_label: Gestion des demandes d'exercice des droits des personnes
+        treatment_txt: |
+            Description : enregistrement et suivi des demandes que les personnes adressent au CAUE pour exercer leurs droits sur leurs données personnelles (accès, rectification, effacement, limitation, portabilité, opposition, retrait du consentement), vérification de leur identité, réponse dans les délais.
+
+            Finalité : répondre aux demandes dans le délai d'un mois (prolongeable de deux mois) et pouvoir prouver la réponse apportée.
+
+            Base légale : obligation légale (art. 6.1.c du RGPD), articles 12 à 22 du RGPD.
+
+            Source des données : la personne elle-même ou son représentant.
+
+            Décision automatisée, profilage : non.
+
+            Mesures de sécurité : celles de l'application (accès par identifiant et mot de passe, droits par rôle, échanges chiffrés, sauvegardes) ; demandes et pièces jointes réservées aux contributeurs RGPD du CAUE, pièces jointes rangées hors de l'espace web public.
+
+            Analyse d'impact (AIPD) : non requise.
+        treatment_recipients: [personnel_caue, dfinfo, hebergement]
