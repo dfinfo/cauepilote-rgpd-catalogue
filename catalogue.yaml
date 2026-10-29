@@ -33,7 +33,7 @@ recipients:
 
     brevo:
         recipient_label: Brevo
-        recipient_txt: Relais d'envoi des emails envoyés par l'application, sous-traitant ultérieur de df-info. Union européenne.
+        recipient_txt: Relais d'envoi des emails envoyés par l'application, et des SMS de rappel de rendez-vous quand l'application l'utilise pour les SMS, sous-traitant ultérieur de df-info. Union européenne.
         recipient_outside_eu: false
 
     smsapi:
