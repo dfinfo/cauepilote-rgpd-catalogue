@@ -51,7 +51,47 @@ recipients:
         recipient_txt: Synchronisation des agendas, sous-traitant ultérieur de df-info. Union européenne et États-Unis, transfert encadré par le cadre de protection des données UE–États-Unis (décision d'adéquation du 10 juillet 2023) et les clauses contractuelles types de la Commission européenne.
         recipient_outside_eu: true
 
+    # Outils d'emailing des CAUE (groupes de diffusion de l'annuaire synchronisés depuis l'application) : comptes du
+    # CAUE, sous-traitants du CAUE et non de df-info. Chaque CAUE coche le sien dans le complément du traitement
+    # « Gestion des contacts et des partenaires » (aucun traitement générique ne les cite).
+    emailing_brevo:
+        recipient_label: Brevo (outil d'emailing du CAUE)
+        recipient_txt: Envoi des lettres d'information et invitations du CAUE aux groupes de diffusion de l'annuaire, synchronisés depuis l'application vers le compte Brevo du CAUE. Sous-traitant du CAUE. Union européenne.
+        recipient_outside_eu: false
+
+    emailing_mailjet:
+        recipient_label: Mailjet (outil d'emailing du CAUE)
+        recipient_txt: Envoi des lettres d'information et invitations du CAUE aux groupes de diffusion de l'annuaire, synchronisés depuis l'application vers le compte Mailjet du CAUE. Sous-traitant du CAUE. Union européenne.
+        recipient_outside_eu: false
+
+    emailing_mailchimp:
+        recipient_label: Mailchimp (outil d'emailing du CAUE)
+        recipient_txt: Envoi des lettres d'information et invitations du CAUE aux groupes de diffusion de l'annuaire, synchronisés depuis l'application vers le compte Mailchimp du CAUE. Sous-traitant du CAUE (Intuit, États-Unis). Transfert hors de l'Union européenne, encadré par le cadre de protection des données UE–États-Unis (décision d'adéquation du 10 juillet 2023) et les clauses contractuelles types du contrat de traitement de Mailchimp.
+        recipient_outside_eu: true
+
 treatments:
+    gestion_contacts:
+        treatment_label: Gestion des contacts et des partenaires
+        treatment_txt: |
+            Description : annuaire des interlocuteurs du CAUE (élus, agents des collectivités et des administrations, professionnels, partenaires, adhérents) et des organismes auxquels ils appartiennent : coordonnées, fonctions, relations avec les organismes, groupes de diffusion, fichiers importés.
+
+            Finalité : identifier et joindre les interlocuteurs du CAUE dans l'exercice de ses missions :
+            - tenue de l'annuaire des contacts et des organismes, de leurs fonctions et de leurs relations ;
+            - invitations, informations et diffusion des publications du CAUE ;
+            - gestion des adhérents et des instances (assemblée générale, conseil d'administration, bureau) ;
+            - statistiques et bilans d'activité, sur des données agrégées.
+
+            Base légale : mission d'intérêt public (art. 6.1.e du RGPD) confiée aux CAUE par la loi n° 77-2 du 3 janvier 1977 sur l'architecture, pour les relations avec les collectivités, les administrations et les partenaires de ses missions ; intérêt légitime du CAUE (art. 6.1.f) pour la gestion de ses adhérents et de ses instances ; consentement (art. 6.1.a) pour l'envoi de lettres d'information aux personnes qui n'en sont pas destinataires au titre de leurs fonctions.
+
+            Source des données : la personne elle-même, l'organisme auquel elle appartient, les sources publiques (annuaires des collectivités et des administrations), les fichiers importés par le CAUE.
+
+            Décision automatisée, profilage : non.
+
+            Mesures de sécurité : une base de données propre à chaque CAUE ; accès à l'application par identifiant et mot de passe, droits attribués par rôle ; échanges chiffrés (HTTPS) ; accès aux serveurs par clé SSH seule, pare-feu, blocage des tentatives d'intrusion, mises à jour de sécurité automatiques ; deux sauvegardes quotidiennes chez deux hébergeurs distincts ; surveillance de la disponibilité toutes les 3 minutes ; journal des accès ; accès aux données limité au personnel habilité de df-info, pour le support et la maintenance.
+
+            Analyse d'impact (AIPD) : non requise. Le traitement ne relève d'aucun critère de la liste de la CNIL des traitements soumis à analyse d'impact (pas de données sensibles, pas de profilage, pas de décision automatisée, pas de surveillance systématique).
+        treatment_recipients: [personnel_caue, dfinfo, hebergement, brevo]
+
     conseil_particuliers:
         treatment_label: Conseil architectural aux particuliers
         treatment_txt: |
