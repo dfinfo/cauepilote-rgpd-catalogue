@@ -70,6 +70,24 @@ recipients:
         recipient_outside_eu: true
 
 treatments:
+    gestion_utilisateurs:
+        treatment_label: Gestion des comptes utilisateurs de l'application
+        treatment_txt: |
+            Description : comptes des utilisateurs de CAUE'PILOTE (salariés, prestataires, partenaires du CAUE) : identité, identifiant et email de connexion, rôles et droits, dernière connexion ; journal des accès à l'application.
+
+            Finalité : contrôler l'accès à l'application et attribuer les droits de chacun ; assurer la sécurité des données (traçabilité des accès, enquête sur incident).
+
+            Base légale : intérêt légitime du CAUE (art. 6.1.f du RGPD) à sécuriser son système d'information, et obligation de sécurité du responsable de traitement (art. 32).
+
+            Source des données : le CAUE, à la création du compte ; l'application, pour la dernière connexion et le journal des accès.
+
+            Décision automatisée, profilage : non.
+
+            Mesures de sécurité : mots de passe stockés sous forme hachée ; comptes nominatifs ; droits par rôle ; journal des accès conservé 12 mois, consultable par le DPO ; comptes désactivés anonymisés 5 ans après leur dernière connexion.
+
+            Analyse d'impact (AIPD) : non requise.
+        treatment_recipients: [personnel_caue, dfinfo, hebergement]
+
     sensibilisation_formation:
         treatment_label: Sensibilisation et formation
         treatment_txt: |
