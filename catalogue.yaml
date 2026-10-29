@@ -70,6 +70,24 @@ recipients:
         recipient_outside_eu: true
 
 treatments:
+    sensibilisation_formation:
+        treatment_label: Sensibilisation et formation
+        treatment_txt: |
+            Description : actions de sensibilisation du public (scolaires, jeune public, grand public) et formations organisées par le CAUE (élus, professionnels, enseignants) : préparation, sessions, étapes et comptes rendus, intervenants et partenaires.
+
+            Finalité : organiser, conduire et suivre les actions de sensibilisation et de formation du CAUE, et en établir les bilans d'activité. Les participants ne sont pas enregistrés nominativement (seuls leurs nombres le sont) ; les intervenants, enseignants, partenaires et stagiaires relèvent de l'annuaire (traitement « Gestion des contacts et des partenaires »).
+
+            Base légale : mission d'intérêt public (art. 6.1.e du RGPD), confiée aux CAUE par l'article 7 de la loi n° 77-2 du 3 janvier 1977 sur l'architecture : développer l'information, la sensibilité et l'esprit de participation du public, contribuer à la formation des maîtres d'ouvrage, des professionnels et des agents des administrations et des collectivités.
+
+            Source des données : les établissements, collectivités et partenaires, les conseillers du CAUE.
+
+            Décision automatisée, profilage : non.
+
+            Mesures de sécurité : celles de l'application (une base par CAUE, accès par identifiant et mot de passe, droits par rôle, échanges chiffrés, sauvegardes quotidiennes, journal des accès).
+
+            Analyse d'impact (AIPD) : non requise.
+        treatment_recipients: [personnel_caue, dfinfo, hebergement]
+
     conseil_collectivites:
         treatment_label: Conseil aux collectivités
         treatment_txt: |
