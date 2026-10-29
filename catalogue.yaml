@@ -70,6 +70,24 @@ recipients:
         recipient_outside_eu: true
 
 treatments:
+    conseil_collectivites:
+        treatment_label: Conseil aux collectivités
+        treatment_txt: |
+            Description : accompagnement des collectivités (communes, intercommunalités, autres acteurs publics) dans leurs projets d'aménagement, d'urbanisme, d'architecture et de paysage : suivi des projets, étapes, réunions et comptes rendus, documents produits.
+
+            Finalité : conduire et suivre les missions de conseil du CAUE auprès des collectivités, en rendre compte et en établir les bilans d'activité. Les personnes concernées sont les élus, les agents et les partenaires de la collectivité, dans l'exercice de leurs fonctions ; leurs coordonnées relèvent de l'annuaire (traitement « Gestion des contacts et des partenaires »).
+
+            Base légale : mission d'intérêt public (art. 6.1.e du RGPD), confiée aux CAUE par l'article 7 de la loi n° 77-2 du 3 janvier 1977 sur l'architecture : conseiller les collectivités et les administrations publiques sur tout projet d'urbanisme, d'architecture ou d'environnement.
+
+            Source des données : les collectivités et leurs partenaires, les conseillers du CAUE.
+
+            Décision automatisée, profilage : non.
+
+            Mesures de sécurité : celles de l'application (une base par CAUE, accès par identifiant et mot de passe, droits par rôle, échanges chiffrés, sauvegardes quotidiennes, journal des accès).
+
+            Analyse d'impact (AIPD) : non requise.
+        treatment_recipients: [personnel_caue, dfinfo, hebergement]
+
     gestion_personnel:
         treatment_label: Gestion du personnel
         treatment_txt: |
