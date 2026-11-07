@@ -42,21 +42,15 @@
             },
             {
                 "nom": "Microsoft Ireland Operations Ltd (Irlande)",
-                "activite": "Synchronisation des agendas de rendez-vous avec un calendrier en ligne Microsoft (Outlook), si la fonction est utilisée",
-                "localisation": "Union européenne / États-Unis",
-                "transfert": "Oui : Microsoft Corporation certifiée au cadre de protection des données UE–États-Unis ; clauses contractuelles types incluses dans l'accord de traitement de Microsoft"
+                "activite": "Synchronisation des agendas de rendez-vous avec un calendrier en ligne Microsoft (Outlook), depuis un compte Microsoft 365 professionnel de df-info, si la fonction est utilisée",
+                "localisation": "Union européenne et AELE (limite de données de l'UE de Microsoft)",
+                "transfert": "Possible vers Microsoft Corporation (États-Unis) et ses sous-traitants : encadré par les clauses contractuelles types 2021 de la Commission européenne (module sous-traitant à sous-traitant) et par la certification de Microsoft au cadre de protection des données UE–États-Unis (addendum sur la protection des données pour les produits et services Microsoft, section « Transferts et emplacement des données », version de novembre 2026)"
             },
             {
                 "nom": "Apple Distribution International Ltd (Irlande)",
-                "activite": "Synchronisation des agendas de rendez-vous avec un calendrier en ligne Apple (iCloud), si la fonction est utilisée",
-                "localisation": "Union européenne / États-Unis",
-                "transfert": "Oui : Apple Inc. certifiée au cadre de protection des données UE–États-Unis ; clauses contractuelles types incluses dans l'accord de traitement d'Apple"
-            },
-            {
-                "nom": "Zoom Communications, Inc. (États-Unis)",
-                "activite": "Organisation des rendez-vous en visioconférence, si la fonction est utilisée",
-                "localisation": "États-Unis / Union européenne",
-                "transfert": "Oui : Zoom Communications, Inc. certifiée au cadre de protection des données UE–États-Unis ; clauses contractuelles types incluses dans l'accord de traitement de Zoom"
+                "activite": "Synchronisation des agendas de rendez-vous avec un calendrier en ligne Apple (iCloud), depuis un compte Apple géré de df-info (Apple Business Manager), si la fonction est utilisée",
+                "localisation": "Union européenne / États-Unis (lieu de stockage choisi par Apple)",
+                "transfert": "Oui : vers Apple Inc. (États-Unis) et ses sous-traitants, encadré par les clauses contractuelles types de la Commission européenne (module sous-traitant à sous-traitant) conclues par Apple (contrat Apple Business Manager, sections 9.1 à 9.4, version du 9 septembre 2025)"
             }
         ]
     },
@@ -71,5 +65,5 @@
             }
         ]
     },
-    "exclusions": "Ne figurent pas dans cette liste les outils qu'un CAUE relie lui-même au Logiciel avec son propre compte, notamment son outil d'envoi de lettres d'information (Brevo, Mailjet ou Mailchimp) : ce sont les sous-traitants du CAUE, sous sa responsabilité ; ils figurent dans le registre de son instance. Il en va de même des comptes Google des collaborateurs du CAUE avec lesquels les agendas sont partagés."
+    "exclusions": "Ne figurent pas dans cette liste les outils qu'un CAUE relie lui-même au Logiciel avec son propre compte, notamment son outil d'envoi de lettres d'information (Brevo, Mailjet ou Mailchimp), son compte de visioconférence (Zoom) ou son environnement Microsoft 365 lorsque les rendez-vous en visioconférence Teams y sont créés : ce sont les sous-traitants du CAUE, sous sa responsabilité ; ils figurent dans le registre de son instance. Il en va de même des comptes Google des collaborateurs du CAUE avec lesquels les agendas sont partagés."
 }
