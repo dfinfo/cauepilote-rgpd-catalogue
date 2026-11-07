@@ -1,0 +1,72 @@
+{
+    "_commentaire": "Liste des sous-traitants ultérieurs de df-info pour CAUE'PILOTE (annexe IV des DPA). Publiée par la page publication/sous-traitants/index.php du rgpd-bundle, qui lit ce fichier sur GitHub (cache d'une heure, dernier valide gardé). Tout ajout ou remplacement d'un sous-traitant est annoncé par email aux CAUE au moins 15 jours avant (DPA, art. 7.2) : mettre à jour ce fichier et mise_a_jour à la date de l'annonce. L'historique git du fichier trace les changements.",
+    "mise_a_jour": "2026-11-07",
+    "hebergeurs": {
+        "texte": "Les serveurs du Logiciel (production, bases de données, sauvegardes, serveur miroir) sont loués auprès des hébergeurs ci-dessous. Leur répartition entre ces hébergeurs peut évoluer, dans le respect des mesures de sécurité de l'accord de sous-traitance, sans information préalable : seul l'ajout ou le remplacement d'un hébergeur est annoncé.",
+        "liste": [
+            {"nom": "OVHcloud (France)", "localisation": "France", "transfert": "Non"},
+            {"nom": "Ikoula (France)", "localisation": "France", "transfert": "Non"},
+            {"nom": "LWS (France)", "localisation": "France", "transfert": "Non"},
+            {"nom": "Scaleway SAS (ex-Online, France)", "localisation": "Pays-Bas", "transfert": "Non"}
+        ]
+    },
+    "services": {
+        "texte": "Les services signalés « si la fonction est utilisée » ne reçoivent aucune donnée d'un CAUE tant que la fonction correspondante n'est pas activée pour son instance, à sa demande.",
+        "liste": [
+            {
+                "nom": "Brevo SAS (France)",
+                "activite": "Relais d'envoi des emails de notification, et des SMS si l'instance l'utilise pour les SMS",
+                "localisation": "Union européenne (hébergement OVH en France et Google Cloud dans l'UE ; sociétés du groupe en France, Belgique et Allemagne)",
+                "transfert": "Possible vers les sous-traitants d'infrastructure et de support de Brevo (Cloudflare, Google Cloud, Zendesk, Omni, Brevo Inc. aux États-Unis, Brevo CRM Solutions en Inde) et, pour les SMS, vers ses opérateurs d'acheminement (Vonage, Telnyx, Twilio, Sinch) : encadrés par les clauses contractuelles types de la Commission européenne et, pour les États-Unis, par le cadre de protection des données UE–États-Unis (accord de traitement de Brevo, art. 8 et annexe 2, version du 1er octobre 2025)"
+            },
+            {
+                "nom": "LINK Mobility Poland sp. z o.o. (SMSAPI, Pologne)",
+                "activite": "Envoi des SMS de rappel des rendez-vous, si la fonction est utilisée",
+                "localisation": "Union européenne (Pologne : hébergement chez Atman, T-Mobile Polska et P4)",
+                "transfert": "Non : ses sous-traitants d'hébergement sont en Pologne ; un transfert vers un sous-traitant hors EEE ne pourrait se faire que dans le cadre des clauses contractuelles types de la Commission (module 3) (accord de traitement de SMSAPI, annexe 1 de ses conditions générales, version du 21 juillet 2026)"
+            },
+            {
+                "nom": "Google Ireland Ltd (Irlande)",
+                "activite": "Synchronisation des agendas de rendez-vous (Google Calendar), depuis un compte Google de df-info, si la fonction est utilisée ; chaque agenda est partagé en lecture avec le compte Google que le collaborateur du CAUE désigne",
+                "localisation": "Union européenne / États-Unis",
+                "transfert": "Oui : Google LLC certifié au cadre de protection des données UE–États-Unis ; clauses contractuelles types incluses dans l'accord de traitement de Google"
+            },
+            {
+                "nom": "Google Ireland Ltd (Irlande)",
+                "activite": "Cartographie et géolocalisation des adresses saisies (Google Maps), si la fonction est utilisée",
+                "localisation": "Union européenne / États-Unis",
+                "transfert": "Oui : Google LLC certifié au cadre de protection des données UE–États-Unis ; clauses contractuelles types incluses dans l'accord de traitement de Google"
+            },
+            {
+                "nom": "Microsoft Ireland Operations Ltd (Irlande)",
+                "activite": "Synchronisation des agendas de rendez-vous avec un calendrier en ligne Microsoft (Outlook), si la fonction est utilisée",
+                "localisation": "Union européenne / États-Unis",
+                "transfert": "Oui : Microsoft Corporation certifiée au cadre de protection des données UE–États-Unis ; clauses contractuelles types incluses dans l'accord de traitement de Microsoft"
+            },
+            {
+                "nom": "Apple Distribution International Ltd (Irlande)",
+                "activite": "Synchronisation des agendas de rendez-vous avec un calendrier en ligne Apple (iCloud), si la fonction est utilisée",
+                "localisation": "Union européenne / États-Unis",
+                "transfert": "Oui : Apple Inc. certifiée au cadre de protection des données UE–États-Unis ; clauses contractuelles types incluses dans l'accord de traitement d'Apple"
+            },
+            {
+                "nom": "Zoom Communications, Inc. (États-Unis)",
+                "activite": "Organisation des rendez-vous en visioconférence, si la fonction est utilisée",
+                "localisation": "États-Unis / Union européenne",
+                "transfert": "Oui : Zoom Communications, Inc. certifiée au cadre de protection des données UE–États-Unis ; clauses contractuelles types incluses dans l'accord de traitement de Zoom"
+            }
+        ]
+    },
+    "support": {
+        "texte": "",
+        "liste": [
+            {
+                "nom": "LWS (France)",
+                "activite": "Messagerie du support (contact@cauepilote.com) et noms de domaine",
+                "localisation": "France",
+                "transfert": "Non"
+            }
+        ]
+    },
+    "exclusions": "Ne figurent pas dans cette liste les outils qu'un CAUE relie lui-même au Logiciel avec son propre compte, notamment son outil d'envoi de lettres d'information (Brevo, Mailjet ou Mailchimp) : ce sont les sous-traitants du CAUE, sous sa responsabilité ; ils figurent dans le registre de son instance. Il en va de même des comptes Google des collaborateurs du CAUE avec lesquels les agendas sont partagés."
+}
