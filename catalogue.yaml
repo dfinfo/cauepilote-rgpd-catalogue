@@ -28,7 +28,7 @@ recipients:
 
     hebergement:
         recipient_label: Hébergeurs des serveurs
-        recipient_txt: Hébergeurs des serveurs de production et de sauvegarde (Ikoula, OVHcloud, Online / Scaleway), sous-traitants ultérieurs de df-info. France et Union européenne.
+        recipient_txt: Hébergeurs des serveurs de l'application (production, bases de données, sauvegardes, serveur miroir), sous-traitants ultérieurs de df-info, dont la liste à jour est publiée à l'adresse https://admin-cauepilote.df-info.com/sous-traitants. Union européenne, centres de données européens uniquement.
         recipient_outside_eu: false
 
     brevo:
